@@ -11,189 +11,237 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#000;
-color:#fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* PROMOTORES */
-.promotor-section{
-margin:40px 20px;
-background:linear-gradient(135deg,#111,#1c1c1c);
-border-radius:20px;
-padding:30px;
-border:1px solid #222;
-box-shadow:0 0 30px rgba(255,215,0,.25);
-text-align:center;
-}
-
-.promotor-section img{
-max-width:100%;
-border-radius:14px;
-margin-bottom:20px;
-}
-
-.promotor-section h2{
-color:#ffd700;
-font-size:26px;
-margin-bottom:15px;
-}
-
-.promotor-section p{
-font-size:16px;
-line-height:1.6;
-margin-bottom:12px;
-color:#ddd;
-}
-
-.promotor-btn{
-display:inline-block;
-margin:20px 0;
-padding:14px 28px;
-background:#25D366;
-color:#000;
-font-weight:bold;
-border-radius:30px;
-text-decoration:none;
-font-size:18px;
-transition:.2s;
-}
-
-.promotor-btn:hover{
-transform:scale(1.05);
-background:#1ebe5d;
-}
-
-.promotor-benefits{
-margin-top:20px;
-text-align:left;
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
-}
-
-.promotor-benefits li{
-margin-bottom:10px;
-list-style:none;
-padding-left:28px;
-position:relative;
-}
-
-.promotor-benefits li::before{
-content:"✔";
-color:#25D366;
-position:absolute;
-left:0;
-font-weight:bold;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.5;
 }
 
 /* HEADER */
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-background:#111;
-border-bottom:1px solid #222;
-}
-.logo{
-font-size:20px;
-font-weight:bold;
-color:#ffd700;
-}
-.header-buttons a{
-margin-left:10px;
-padding:8px 14px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
-.whatsapp{background:#25D366;color:#000}
-.app-btn{background:#ffd700;color:#000}
-
-/* MAIN */
-main{
-padding:30px 20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #111;
+  border-bottom: 1px solid #222;
+  gap: 12px;
 }
 
-/* CARDS */
-.card{
-background:#111;
-border-radius:14px;
-padding:25px;
-text-align:center;
-cursor:pointer;
-transition:.2s;
-border:1px solid #222;
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffd700;
 }
-.card:hover{
-transform:scale(1.05);
-border-color:#ffd700;
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.card i{
-font-size:40px;
-margin-bottom:10px;
-color:#ffd700;
+
+.header-buttons a {
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.whatsapp { background: #25D366; color: #000; }
+.app-btn   { background: #ffd700; color: #000; }
+
+/* MAIN - Cards */
+main {
+  padding: 20px 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #111;
+  border-radius: 14px;
+  padding: 24px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s;
+  border: 1px solid #222;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #ffd700;
+}
+
+.card i {
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: #ffd700;
+}
+
+.card h3 {
+  font-size: 18px;
+}
+
+/* PROMOTORES */
+.promotor-section {
+  margin: 32px 16px;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+  border-radius: 16px;
+  padding: 24px 16px;
+  border: 1px solid #222;
+  box-shadow: 0 0 25px rgba(255,215,0,.15);
+  text-align: center;
+}
+
+.promotor-section img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.promotor-section h2 {
+  color: #ffd700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.promotor-section p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+.promotor-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 16px 32px;
+  background: #25D366;
+  color: #000;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: .25s;
+}
+
+.promotor-btn:hover {
+  transform: scale(1.06);
+  background: #1ebe5d;
+}
+
+.promotor-benefits {
+  margin: 24px auto 0;
+  text-align: left;
+  max-width: 100%;
+}
+
+.promotor-benefits li {
+  margin-bottom: 12px;
+  list-style: none;
+  padding-left: 32px;
+  position: relative;
+  font-size: 15px;
+}
+
+.promotor-benefits li::before {
+  content: "✔";
+  color: #25D366;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
 
 /* MODAL */
-.modal{
-position:fixed;
-top:0;left:0;
-width:100%;height:100%;
-background:rgba(0,0,0,.85);
-display:none;
-justify-content:center;
-align-items:center;
-z-index:999;
-}
-.modal-content{
-background:#111;
-border-radius:16px;
-padding:20px;
-max-width:90%;
-max-height:90%;
-overflow:auto;
-position:relative;
-}
-.close{
-position:absolute;
-top:10px;right:15px;
-cursor:pointer;
-font-size:22px;
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+  overflow-y: auto;
+  z-index: 9999;
 }
 
-/* TABLE */
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:15px;
+.modal-content {
+  background: #111;
+  border-radius: 16px;
+  padding: 32px 20px;
+  width: 92%;
+  max-width: 760px;
+  position: relative;
+  margin: 20px auto;
 }
-th,td{
-border:1px solid #333;
-padding:8px;
-text-align:center;
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+  color: #ccc;
 }
-th{
-background:#ffd700;
-color:#000;
+
+/* TABLE - Cotação */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 14.5px;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+th {
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
 }
 
 /* VIDEOS */
-.videos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
+.videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 20px;
 }
-video{
-width:100%;
-border-radius:10px;
-background:#000;
+
+video {
+  width: 100%;
+  max-height: 480px;
+  border-radius: 10px;
+  background: #000;
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 32px 24px;
+  }
+  
+  .promotor-section {
+    margin: 48px 32px;
+    padding: 40px;
+  }
 }
 </style>
 </head>
@@ -201,40 +249,34 @@ background:#000;
 <body>
 
 <header>
-<div class="logo">🍀 SorteClub</div>
-<div class="header-buttons">
-<a href="https://wa.me/5583993370071" class="whatsapp" target="_blank">WhatsApp</a>
-<a href="https://sorteclub.net" class="app-btn">ACESSAR APP</a>
-</div>
+  <div class="logo">🍀 SorteClub</div>
+  <div class="header-buttons">
+    <a href="https://wa.me/5583993370071" class="whatsapp" target="_blank">WhatsApp</a>
+    <a href="https://sorteclub.net" class="app-btn">ACESSAR APP</a>
+  </div>
 </header>
 
 <main>
-<div class="card" onclick="openModal('cotacao')">
-<i class="fas fa-chart-line"></i>
-<h3>Cotação</h3>
-</div>
+  <div class="card" onclick="openModal('cotacao')">
+    <i class="fas fa-chart-line"></i>
+    <h3>Cotação</h3>
+  </div>
 
-<div class="card" onclick="openModal('bonus')">
-<i class="fas fa-gift"></i>
-<h3>Bônus</h3>
-</div>
+  <div class="card" onclick="openModal('bonus')">
+    <i class="fas fa-gift"></i>
+    <h3>Bônus</h3>
+  </div>
 
-<div class="card" onclick="openModal('tutoriais')">
-<i class="fas fa-video"></i>
-<h3>Tutoriais</h3>
-</div>
+  <div class="card" onclick="openModal('tutoriais')">
+    <i class="fas fa-video"></i>
+    <h3>Tutoriais</h3>
+  </div>
 </main>
 
-<!-- NOVA SEÇÃO DE PROMOTORES -->
 <section class="promotor-section">
   <h2>🚀 Torne-se Promotor SorteClub</h2>
-
   <img src="promotores.png" alt="Programa de Promotores SorteClub">
-
-  <p>
-    Faça parte do time de promotores da <b>SorteClub</b> e transforme sua divulgação
-    em uma fonte real de ganhos recorrentes.
-  </p>
+  <p>Faça parte do time de promotores da <b>SorteClub</b> e transforme sua divulgação em ganhos reais e recorrentes.</p>
 
   <a href="https://promotore.sorteclub.net" class="promotor-btn" target="_blank">
     TORNAR-SE PROMOTOR
@@ -244,76 +286,83 @@ background:#000;
     <ul>
       <li><b>7% de comissão</b> sobre Fazendinha e JB</li>
       <li><b>10% do lucro positivo</b> do cassino</li>
-      <li><b>Suporte ativo 24h</b> para auxiliar promotores</li>
-      <li><b>Grupo exclusivo</b> com informações, avisos e novidades</li>
-      <li><b>Banners e materiais prontos</b> para divulgação</li>
-      <li><b>Sites personalizados</b> para destacar você da concorrência</li>
+      <li><b>Suporte ativo 24h</b> para promotores</li>
+      <li><b>Grupo exclusivo</b> com dicas e novidades</li>
+      <li><b>Banners e materiais prontos</b> para divulgar</li>
+      <li><b>Sites personalizados</b> para você se destacar</li>
     </ul>
   </div>
 
-  <p style="margin-top:20px;font-weight:bold;color:#ffd700">
-    📈 Quanto mais você divulga, mais você ganha.<br>
-    Seja promotor SorteClub hoje mesmo!
+  <p style="margin-top:24px; font-weight:bold; color:#ffd700; font-size:15px;">
+    📈 Quanto mais divulga, mais ganha!<br>Comece hoje!
   </p>
 </section>
 
 <!-- MODAL -->
 <div class="modal" id="modal">
-<div class="modal-content" id="modalContent">
-<span class="close" onclick="closeModal()">✖</span>
-</div>
+  <div class="modal-content" id="modalContent">
+    <span class="close" onclick="closeModal()">✖</span>
+  </div>
 </div>
 
 <script>
-function openModal(type){
-let html="";
-if(type==="cotacao"){
-html=`
-<h2>📊 Cotação</h2>
-<table>
-<tr><th>Tipo</th><th>Valor (R$)</th></tr>
-<tr><td>Unidade</td><td>8,00</td></tr>
-<tr><td>Grupo</td><td>20,00</td></tr>
-<tr><td>Dezena</td><td>80,00</td></tr>
-<tr><td>Centena</td><td>800,00</td></tr>
-<tr><td>Milhar</td><td>8.000,00</td></tr>
-<tr><td>Duque GP</td><td>180,00</td></tr>
-<tr><td>Terno GP</td><td>1.500,00</td></tr>
-<tr><td>Quadra GP</td><td>1.000,00</td></tr>
-<tr><td>Quina GP (8/5)</td><td>1.000,00</td></tr>
-<tr><td>Sena GP</td><td>1.000,00</td></tr>
-<tr><td>Duque Dez</td><td>300,00</td></tr>
-<tr><td>Terno Dez Seco</td><td>10.000,00</td></tr>
-<tr><td>Terno Dez</td><td>5.000,00</td></tr>
-<tr><td>Passe Vai</td><td>90,00</td></tr>
-<tr><td>Passe Vai Vem</td><td>45,00</td></tr>
-</table>`;
-}
-if(type==="bonus"){
-html=`
-<h2>🎁 Bônus</h2>
-<p><b>🟢 25%</b> para novos cadastros no depósito, até <b>R$ 100</b>.</p>
-<p><b>🔵 10%</b> nos demais dias, válido para a <b>primeira recarga do dia</b>, na opção <b>Loterias</b>.</p>`;
-}
-if(type==="tutoriais"){
-let vids="";
-for(let i=1;i<=20;i++){
-vids+=`
-<video controls controlsList="nodownload">
-<source src="${i}.mp4" type="video/mp4">
-</video>`;
-}
-html=`<h2>🎥 Tutoriais</h2><div class="videos">${vids}</div>`;
+function openModal(type) {
+  const modal = document.getElementById("modal");
+  const content = document.getElementById("modalContent");
+  
+  let html = '<span class="close" onclick="closeModal()">✖</span>';
+
+  if (type === "cotacao") {
+    html += `
+      <h2 style="text-align:center; color:#ffd700; margin-bottom:20px;">📊 Cotação Atual</h2>
+      <table>
+        <tr><th>Tipo</th><th>Valor (R$)</th></tr>
+        <tr><td>Unidade</td><td>8,00</td></tr>
+        <tr><td>Grupo</td><td>20,00</td></tr>
+        <tr><td>Dezena</td><td>80,00</td></tr>
+        <tr><td>Centena</td><td>800,00</td></tr>
+        <tr><td>Milhar</td><td>8.000,00</td></tr>
+        <tr><td>Duque GP</td><td>180,00</td></tr>
+        <tr><td>Terno GP</td><td>1.500,00</td></tr>
+        <tr><td>Quadra GP</td><td>1.000,00</td></tr>
+        <tr><td>Quina GP (8/5)</td><td>1.000,00</td></tr>
+        <tr><td>Sena GP</td><td>1.000,00</td></tr>
+        <tr><td>Duque Dez</td><td>300,00</td></tr>
+        <tr><td>Terno Dez Seco</td><td>10.000,00</td></tr>
+        <tr><td>Terno Dez</td><td>5.000,00</td></tr>
+        <tr><td>Passe Vai</td><td>90,00</td></tr>
+        <tr><td>Passe Vai Vem</td><td>45,00</td></tr>
+      </table>`;
+  }
+
+  if (type === "bonus") {
+    html += `
+      <h2 style="text-align:center; color:#ffd700; margin-bottom:20px;">🎁 Bônus Disponíveis</h2>
+      <p style="font-size:17px; margin:15px 0;"><b>🟢 25%</b> para novos cadastros no primeiro depósito, até <b>R$ 100</b>.</p>
+      <p style="font-size:17px; margin:15px 0;"><b>🔵 10%</b> nos demais dias, válido apenas para a <b>primeira recarga do dia</b>, na opção <b>Loterias</b>.</p>
+      <p style="color:#aaa; font-size:14px; margin-top:25px; text-align:center;">*Consulte as regras completas no aplicativo</p>`;
+  }
+
+  if (type === "tutoriais") {
+    let videos = '';
+    for (let i = 1; i <= 20; i++) {
+      videos += `
+        <video controls controlsList="nodownload" preload="metadata">
+          <source src="${i}.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>`;
+    }
+    html += `
+      <h2 style="text-align:center; color:#ffd700; margin-bottom:20px;">🎥 Tutoriais</h2>
+      <div class="videos">${videos}</div>`;
+  }
+
+  content.innerHTML = html;
+  modal.style.display = "flex";
 }
 
-document.getElementById("modalContent").innerHTML =
-'<span class="close" onclick="closeModal()">✖</span>' + html;
-
-document.getElementById("modal").style.display="flex";
-}
-
-function closeModal(){
-document.getElementById("modal").style.display="none";
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
 }
 </script>
 
